@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: url(https://images4.alphacoders.com/129/1297452.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+       
+        .app{
+            position: relative;
+            width: 400px;
+            height: 300px;
+            background-color: transparent;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,.5);
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            
+        }
+           
+        
+    </style>
+</head>
+<body>
+ 
+    <form action="" class="app">
+        <table>
+            
+            <tr>
+                <td><label for="name">NAME</label></td>
+                <td><input type="text" placeholder="NAME" id="name" name="name"></td>
+            </tr>
+            <tr>
+                <td><label for="age">AGE</label></td>
+                <td><input type="number" name="age" id="AGE" placeholder="AGE"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">GENDER</label></td>
+                <td><input type="radio" name="GENDER" value="male">male</td>
+                <td><input type="radio" name="GENDER" value="female">female</td>
+            </tr>
+            <tr>
+                <td><label for="mail">EMAIL</label></td>
+                <td><input type="text" name="mail" id="EMAIL" placeholder="mail"></td>
+            </tr>
+            <tr>
+                <td><label for="dob">D.O.B</label></td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td><label for="country">COUNTRY</label></td>
+                <td><select name="COUNTRY" id="COUNTRY">
+                    <option value="">USA</option>
+                    <option value="">INDIA</option>
+                    <option value="">CANADA</option>
+                    <option value="">BRAZIL</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><input type="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
