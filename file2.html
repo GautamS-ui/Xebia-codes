@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <button onclick="userDetails()">G/S</button>
+    <button onclick="evenOdd()">EO</button>
+    <button onclick="marks()">%</button>
+    <button onclick="calc()">cal</button>
+
+    <script>
+
+        function userDetails(){
+            num1= prompt("enter number 1 ")
+            num2= prompt("enter number 2 ")
+
+            
+
+            if(num1>num2){
+                alert(` ${num1} is greater`)
+            }
+
+            else{
+                alert(` ${num2} is greater`)
+            }
+        }
+
+        function evenOdd(){
+            num = prompt("enter the number")
+            
+            if(num %2==0){
+                alert(` ${num} is even`)
+            }
+            else{
+                alert(`${num} is odd`)
+            }
+
+        }
+
+        function marks(){
+           let Phy = parseFloat(prompt("enter marks in physics"))
+           let Chm = parseFloat(prompt("enter marks in chemistry"))
+           let Mth = parseFloat(prompt("enter marks in maths"))
+
+            let sum = Phy+Chm+Mth
+            let per = sum/300*100
+            let cgpa= per/10
+            alert(`${cgpa}`)
+
+            if(cgpa<=10){
+                alert(`${cgpa} A grade`)
+            }
+            if (cgpa<=6) {
+                alert(`${cgpa} B grade`)
+            } else {
+                alert(`${cgpa} C grade`)
+                
+            }
+        }
+
+        function calc(){
+           let no1 = parseInt(prompt("enter number 1"))
+           let no2 = parseInt(prompt("enter number 2"))
+           let x = prompt("press 1 for add 2 for sub 3 for multiply")
+
+           sum= no1+no2
+           sub= no1-no2
+           multiply= no1*no2
+
+           if(x==1){
+            alert(`${sum}`)
+           }
+           else if (x==2) {
+            alert(`${sub}`)
+           } 
+           else if(x==3){
+            alert(`${multiply}`)
+           }
+           else{
+            alert("invalid")
+           }
+
+        }
+        
+            
+            
+            
+        
+
+
+
+
+    </script>
+</body>
+</html>

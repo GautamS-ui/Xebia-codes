@@ -1,0 +1,207 @@
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(209, 205, 205, 0.611)
+}
+
+.main
+{
+    display: flex;
+    background-color: #ffffff;
+}
+
+.main i {
+    margin: auto;
+    margin-left: 10px;
+}
+
+.img{
+    width: 10%;
+    float: left;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.col2 {
+    width: 50%;
+    float: left;
+}
+.col2 .inputText
+{
+    width: 95%;
+    height: 30px;
+    margin-left: 50px;
+    margin-top: 7px;
+    font-size: 1em;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #e4ecfb;
+    border-color:transparent;
+    padding: 2px;
+
+
+}
+
+.col3
+{
+    margin-left: 100px ;
+    
+    float: left;
+}
+.col3 .ul{
+    list-style-type: none;
+
+}
+
+.col3 i {
+    margin-right: 5px;
+    
+}
+
+
+
+ul li {
+    display: inline;
+    margin: 15px;
+    display: inline;
+}
+
+.items{
+    display: flex;
+    background-color: #ffffff;
+}
+.products img{ 
+    width: 50%; 
+    margin-top: 20px;
+    margin-left: 20px;
+
+    
+    
+}
+
+.products{
+    display: inline;
+    align-content: center;
+    
+}
+
+.products p{
+    text-align: center;
+    margin-right: 50%;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.pic img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.Premiumproducts{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border: 1px red;
+}
+
+.para{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: inter_semi_bold,fallback-inter_semi_bold,Arial,sans-serif;
+}
+
+.Premium{
+    width: 25%;
+    height: 100%;
+    
+}
+
+.Premium img{
+    width: 50%;
+    margin-top: 15px;
+    height: 100%;
+    margin-left: 3em;
+    margin-bottom: 10px;
+     
+}
+
+.banner2{
+    width: 100%;
+    height: 100%;
+}
+
+.banner2 img{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.B3 {
+    display: flex;
+}
+
+.B3 img{
+    display: inline;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+
+.B4 {
+    display: flex;
+}
+
+.B4 img{
+    display: inline;
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.B5 {
+    display: flex;
+}
+
+.B5 img{
+    display: inline;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+
+
+.FBrands{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.brands{
+    width: 100%;
+    height: 100%;
+    border: 2px black;
+    
+}
+
+.brands img{
+    width: 75%;
+    margin-top: 10px;
+    height: 100%;
+    margin-left: 2em;
+    margin-bottom: 10px;
+    
+    
+}
