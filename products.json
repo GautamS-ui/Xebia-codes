@@ -1,0 +1,17 @@
+[
+    { "id": 1, "name": "Basic T-Shirt",    "price": 499,  "category": "Clothing", "image": "https://image.hm.com/assets/hm/02/50/0250fe15a5aab2edc3ec9eb5229d5d199469fb6c.jpg?imwidth=1536" },
+    { "id": 2, "name": "Slim Jeans",       "price": 999,  "category": "Clothing", "image": "https://image.hm.com/assets/hm/8a/7d/8a7db64db36d0770c77c6c27ac30c687d319e794.jpg?imwidth=1536" },
+    { "id": 3, "name": "Denim Jacket",     "price": 1999, "category": "Clothing", "image": "https://image.hm.com/assets/hm/09/27/09277e176c0f1d22576c5aeac8e1bb526565e0b2.jpg?imwidth=1536" },
+    { "id": 4, "name": "Formal Shirt",     "price": 799,  "category": "Clothing", "image": "https://image.hm.com/assets/hm/d5/a1/d5a182bd016dab1561c8481df0a0c63d23e282d9.jpg?imwidth=1536" },
+  
+    { "id": 5, "name": "Sneakers", "price": 1499, "category": "Footwear", "image": "https://cdn.shopify.com/s/files/1/0570/7389/3509/t/1/assets/31-03-2025-052951-travis_scott_x_air_jordan_1_retro_high_og_mocha.png" },
+    { "id": 6, "name": "Leather Boots",    "price": 2499, "category": "Footwear", "image": "https://dablrshoes.com/cdn/shop/files/20220817_dablr_0005rt_1200x800_be9e61a7-5ea3-4b77-a8ec-a7190bf2acfc.webp?v=1713541235&width=720" },
+    { "id": 7, "name": "Ankle Socks",      "price": 99,   "category": "Footwear", "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/685301/01/fnd/IND/fmt/png/Cushion-Sport-Quarter-Socks-Pack-of-3" },
+    { "id": 8, "name": "Flip Flops",       "price": 299,  "category": "Footwear", "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTv-pWZtqh8mLc_BX1JFuMVNkMPow8cmGQav9uAtl2-TyMZp_QaJaWyWqp_Xza71daI9-vRdO6-" },
+  
+    { "id": 9, "name": "Chain",    "price": 199,  "category": "Accessories", "image": "https://karizmajewels.in/cdn/shop/files/chain3..jpg?v=1723624864" },
+    { "id": 10, "name": "Leather Belt",   "price": 299,  "category": "Accessories", "image": "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/476853/item/goods_09_476853_3x4.jpg?width=369" },
+    { "id": 11, "name": "Sunglasses",     "price": 699,  "category": "Accessories", "image": "https://eyejack.in/cdn/shop/files/17001pcl745-1.jpg?v=1745665949" },
+    { "id": 12, "name": "Wrist Watch",    "price": 2499, "category": "Accessories", "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSvwBr5Z1fJBoyS-A3DytFo0h-BOYcKfkq6NgZqKSS2vpoOTFqaGObTRvG5otC4PPzBgSoG0rro" }
+  ]
+  

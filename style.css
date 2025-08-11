@@ -1,0 +1,358 @@
+/* Reset and Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Playfair Display", serif; /* Elegant serif for premium feel */
+    background-color: #f5f5f7;
+    color: #222;
+    line-height: 1.7;
+    font-size: 16px;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container */
+main {
+    max-width: 1280px;
+    margin: 50px auto;
+    padding: 0 30px;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+    text-align: center;
+    margin-bottom: 60px;
+    letter-spacing: 0.05em;
+}
+
+header h1 {
+    font-family: "Montserrat", sans-serif; /* Clean font to complement serif */
+    font-weight: 800;
+    font-size: 3.2rem;
+    color: #1c1c1c;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+/* Navigation */
+nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #555;
+    letter-spacing: 0.05em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    padding: 10px 15px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #b99a6f; /* Luxurious gold accent */
+    bottom: 0;
+    left: 0;
+    transition: width 0.4s;
+    border-radius: 2px;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #b99a6f;
+}
+
+nav a:hover::after,
+nav a:focus::after {
+    width: 100%;
+}
+
+/* Section Titles */
+section h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: #3a3a3a;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #b99a6f;
+    padding-bottom: 12px;
+    letter-spacing: 0.03em;
+}
+
+/* Product Grid */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 35px;
+}
+
+/* Product Card */
+.product {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(185, 154, 111, 0.25); /* Soft goldish shadow */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    cursor: pointer;
+    border: 1px solid #e1dac9;
+}
+
+.product:hover,
+.product:focus-within {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 60px rgba(185, 154, 111, 0.45);
+}
+
+/* Product Image */
+.product img {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    border-bottom: 1px solid #e1dac9;
+    transition: transform 0.4s ease;
+}
+
+.product:hover img,
+.product:focus-within img {
+    transform: scale(1.05);
+}
+
+/* Product Content */
+.product h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #2c2c2c;
+    margin: 20px 25px 10px;
+    letter-spacing: 0.02em;
+}
+
+.product p {
+    font-weight: 700;
+    color: #b99a6f; /* Gold accent */
+    font-size: 1.15rem;
+    margin: 0 25px 20px;
+}
+
+/* Add to Cart Button */
+.product button {
+    background-color: #b99a6f;
+    color: #fff;
+    border: none;
+    padding: 14px 0;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 0 0 20px 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    letter-spacing: 0.05em;
+}
+
+.product button:hover,
+.product button:focus {
+    background-color: #9e8559;
+    box-shadow: 0 8px 25px rgba(185, 154, 111, 0.5);
+    outline: none;
+}
+
+/* Cart Section */
+#cart-section {
+    background: #ffffff;
+    max-width: 450px;
+    margin: 70px auto 100px;
+    padding: 40px 35px 50px;
+    border-radius: 20px;
+    box-shadow: 0 20px 65px rgba(185, 154, 111, 0.2);
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Cart Title */
+#cart-section h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #3a3a3a;
+    margin-bottom: 35px;
+    border-bottom: 2px solid #b99a6f;
+    padding-bottom: 14px;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
+/* Cart List */
+#cart {
+    list-style: none;
+    max-height: 280px;
+    overflow-y: auto;
+    padding: 0;
+    margin-bottom: 35px;
+}
+
+#cart li {
+    padding: 18px 12px;
+    border-bottom: 1px solid #f0e9d2;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #3c3c3c;
+}
+
+/* Scrollbar Styling for Cart */
+#cart::-webkit-scrollbar {
+    width: 7px;
+}
+
+#cart::-webkit-scrollbar-track {
+    background: #f9f8f4;
+    border-radius: 20px;
+}
+
+#cart::-webkit-scrollbar-thumb {
+    background-color: #b99a6f;
+    border-radius: 20px;
+}
+
+#cart::-webkit-scrollbar-thumb:hover {
+    background-color: #9e8559;
+}
+
+/* Checkout Button */
+#checkoutBtn {
+    width: 100%;
+    background-color: #b99a6f;
+    padding: 18px 0;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: 800;
+    font-size: 1.15rem;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(185, 154, 111, 0.45);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+#checkoutBtn:hover,
+#checkoutBtn:focus {
+    background-color: #9e8559;
+    box-shadow: 0 14px 40px rgba(158, 133, 89, 0.6);
+    outline: none;
+}
+
+/* Checkout Page Container */
+#checkout-container {
+    background: #ffffff;
+    max-width: 520px;
+    margin: 70px auto 100px;
+    padding: 50px 45px 55px;
+    border-radius: 25px;
+    box-shadow: 0 25px 75px rgba(185, 154, 111, 0.25);
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Checkout Order Summary */
+#checkoutCart {
+    list-style: none;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+#checkoutCart li {
+    padding: 20px 14px;
+    border-bottom: 1px solid #f1e9d0;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #3a3a3a;
+}
+
+/* Summary Totals */
+#subtotal, #gst, #total {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #2a2a2a;
+    margin: 14px 0;
+    text-align: right;
+    letter-spacing: 0.04em;
+}
+
+#total {
+    font-size: 1.75rem;
+    color: #7b5e00; /* Deep gold */
+    margin-top: 25px;
+}
+
+/* Place Order Button */
+#placeOrderBtn {
+    margin-top: 40px;
+    width: 100%;
+    background-color: #b99a6f;
+    color: white;
+    border: none;
+    padding: 18px 0;
+    border-radius: 25px;
+    font-weight: 900;
+    font-size: 1.3rem;
+    cursor: pointer;
+    box-shadow: 0 12px 35px rgba(185, 154, 111, 0.6);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+#placeOrderBtn:hover,
+#placeOrderBtn:focus {
+    background-color: #9e8559;
+    box-shadow: 0 18px 50px rgba(158, 133, 89, 0.7);
+    outline: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    main {
+        max-width: 90%;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    .products {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 25px;
+    }
+
+    header h1 {
+        font-size: 2.4rem;
+    }
+
+    nav {
+        gap: 25px;
+        font-size: 1rem;
+    }
+
+    #cart-section,
+    #checkout-container {
+        max-width: 95%;
+        padding: 30px 25px;
+    }
+}
